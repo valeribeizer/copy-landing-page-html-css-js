@@ -8,6 +8,7 @@ const overlay = document.querySelector(".overlay");
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 const btnCloseModal = document.querySelector(".btn--close-modal");
 const btn = document.querySelector('.btn-modal');
+const greenContainer = document.querySelector(".jobs");
 
 function addLinks() {
   var data = [
@@ -185,8 +186,6 @@ function animateValue(id, start, end, duration) {
     }
   }, stepTime);
 }
-
-const greenContainer = document.querySelector(".jobs");
 
 const observerOptions = {
   threshold: 0.1,
