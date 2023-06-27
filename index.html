@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Test</title>
+    <script defer src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#section--hp"
+          ><img src="img/logo.svg" alt="App logo" class="nav__logo" id="logo"
+        /></a>
+        <ul class="nav__links"></ul>
+        <div class="nav__item--call">
+          <a class="nav__link--num" href="#">(240) 630-0794</a>
+          <a class="nav__link--call btn--show-modal" href="#">Order a callback</a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link nav__link--btn btn--show-modal" href="#"
+            >Book online</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <div class="hp__banner" id="section--hp">
+      <div class="hp__banner--left">
+        <h6>
+          Fix it right, fix it fast with our expert appliance repair and HVAC
+        </h6>
+        <h1>
+          Same & Next Day
+          <span style="color: #039e2a">Appliance Repair and HVAC</span>
+          in Greater Boston area
+        </h1>
+        <h5>
+          Expert technicians, fast response, affordable prices, warranty on all
+          repairs. Trust us to fix all your units quickly & correctly!
+        </h5>
+        <button class="btn btn--show-modal" href="#">
+          Get quality service
+        </button>
+        <div class="rating__container">
+          <h3>People love us</h3>
+          <div class="socials__stars">
+            <div class="socials">
+              <img src="img/google.svg" alt="google" />
+              <img src="img/google__stars.png" alt="google__stars" />
+              <h6>4.9</h6>
+            </div>
+            <div class="socials">
+              <img src="img/yelp.svg" alt="yelp" />
+              <img src="img/yelp__stars.svg" alt="yelp__stars" />
+              <h6>5.0</h6>
+            </div>
+          </div>
+          <div class="lines">
+            <div class="line--1"></div>
+            <p>
+              based on 700+ <span style="color: #039e2a">local reviews</span>
+            </p>
+            <div class="line--1"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hp__banner--right">
+        <img class="slide" src="img/img1.webp" alt="img1" />
+        <img class="slide" src="img/img2.png" alt="img2" />
+        <img class="slide" src="img/img3.avif" alt="img3" />
+
+        <button class="slider__btn slider__btn--left">
+          <img src="img/upper arrow 1.svg" alt="arrow-right" />
+        </button>
+        <button class="slider__btn slider__btn--right">
+          <img src="img/upper arrow.svg" alt="arrow-lrft" />
+        </button>
+        <div class="dots"></div>
+      </div>
+    </div>
+
+    <div class="advantages"></div>
+
+    <div class="jobs">
+      <div class="jobs--number">
+        <h1 class="jobs-h1">>21,<span id="counter">100</span></h1>
+        <h4>jobs!</h4>
+      </div>
+      <div class="jobs--desc">
+        <h2>
+          We successfully completed this number of jobs in 2022 with an
+          outstanding average rating of 4.95!
+        </h2>
+      </div>
+    </div>
+
+    <div class="har" id="section--1">
+      <h2><span style="color: #039e2a">Home appliance</span> repair</h2>
+      <div class="har--options">
+        <div class="har--options__column 1"></div>
+        <div class="har--options__column 2"></div>
+      </div>
+    </div>
+
+    <div class="har 2" style="gap: 10px" id="section--2">
+      <h2 style="margin-bottom: 35px">
+        <span style="color: #039e2a">Commercial appliance</span> repair
+      </h2>
+    </div>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2>Fill the form</h2>
+      <form class="modal__form">
+        <label>Name</label>
+        <input type="text" placeholder="Your name (optional)"/>
+        <label>Email</label>
+        <input type="email" placeholder="Your email (optional)" />
+        <label>Phone<span style="color: red;">*</span></label>
+        <input type="phone" />
+        <label>Message</label>
+        <textarea type="text" rows="5" placeholder="Your message here (optional)"></textarea>
+        <button class="btn btn-modal">Send</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
